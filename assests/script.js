@@ -22,10 +22,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 $(document).ready(function () {
 
-    // Hide loading text first
+    
     $("#loading").hide();
 
-    // Function to fetch users
+    
     function fetchUsers() {
 
         $("#loading").show();
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
             $("#loading").hide();
 
-            // Clear container before adding users
+            
             $("#userContainer").html("");
 
             users.forEach(user => {
@@ -80,17 +80,17 @@ $(document).ready(function () {
 
     }
 
-    // Run function
+    
     fetchUsers();
 
-    // Hide cards
+    
     $("#hideBtn").click(function () {
 
         $("#userContainer").slideUp();
 
     });
 
-    // Show cards
+    
     $("#showBtn").click(function () {
 
         $("#userContainer").slideDown();
